@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=EB+Garamond:ital,wght@1,600&family=Noto+Serif+Hebrew&family=Poltawski+Nowy:ital,wght@1,700&family=Raleway:ital@1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+  width: 100vw;
+}
+
+li {
+  margin-right: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:visited {
+  color: #000;
+}
+
+ul li a:hover {
+  color: #41209a;
+}
+
+ul li ul li {
+  position: relative;
+  margin: 5px;
+  white-space: nowrap;
+}
+
+nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+
+nav li:hover > ul {
+  display: block;
+}
+
+.logo {
+  position: absolute;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 800;
+  margin: 15px;
+  width: fit-content;
+  z-index: 2;
+}
+
+.navbar {
+  background-color: aliceblue;
+  height: 10vh;
+  padding: 18px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.icon {
+  margin-left: 5px;
+}
+
+.nav-btn {
+  position: relative;
+  height: 37px;
+  bottom: 10px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  padding: 7px;
+  background-color: #6a34ff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: repeat(2, 220px);
+  justify-items: center;
+
+}
+
+sub {
+  margin-left: 22px;
+  letter-spacing: 1.5px;
+  align-self: center;
+  justify-self: flex-start;
+  font-family: 'Raleway', sans-serif;
+  color: #6a34ff;
+  font-weight: 900;
+}
+
+.title {
+  position: relative;
+  bottom: 100px;
+  margin-left: 20px;
+  font-family: 'Noto Serif Hebrew', serif;
+  font-size: 2.5rem;
+  justify-self: start;
+  font-weight: 900;
+  width: 200px;
+}
+
+
+.banner-text {
+  font-weight: 300;
+  font-family: 'Times New Roman', Times, serif;
+  position: relative;
+  justify-self: start;
+  width: 250px;
+  bottom: 180px;
+  margin-top: 10px;
+  word-spacing: 5px;
+  margin-left: 20px;
+}
+
+.banner-btn {
+  position: relative;
+  height: 40px;
+  bottom: 240px;
+  left: 30px;
+  justify-self: start;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 16px;
+  border: none;
+  padding: 12px;
+  background-color: #6a34ff;
+}
+
+button:hover {
+  background-color: #41209a;
+}
+
+.img-container {
+  grid-column: 2/ 3;
+  grid-row: 1/ 4;
+}
+
+.img {
+  margin-right: 30px;
+  font-size: 1rem;
+  grid-column: span 2;
+}
